@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Typography, Button } from "@mui/material";
 
 const Timer = () => {
-  const initialMinutes = 25;
+  const initialMinutes = 30;
   const initialSeconds = 0;
 
   const [minutes, setMinutes] = useState(initialMinutes);

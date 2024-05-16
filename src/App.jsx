@@ -26,7 +26,7 @@ const App = () => {
       <Card sx={{ margin: "0 auto", mt: 2, width: "250px" }}>
         <CardContent>
           <Typography sx={{ fontSize: 15 }} color="text.secondary" gutterBottom>
-            25 minutes pomodoro 👀💐
+            30 minutes pomodoro 👀💐
           </Typography>
         </CardContent>
       </Card>
