@@ -23,13 +23,28 @@ const App = () => {
           </a>
         </Typography>
       </Box>
-      <Card sx={{ margin: "0 auto", mt: 2, width: "250px" }}>
-        <CardContent>
-          <Typography sx={{ fontSize: 15 }} color="text.secondary" gutterBottom>
-            30 minutes pomodoro 👀💐
-          </Typography>
-        </CardContent>
-      </Card>
+      <Grid container spacing={2}>
+        <Grid
+          item
+          sx={{ margin: "0 auto", mt: { lg: 4 }, mt: { xs: 5 } }}
+          xs={7}
+          sm={6}
+          md={4}
+          lg={3}
+        >
+          <Card>
+            <CardContent>
+              <Typography
+                sx={{ fontSize: 15 }}
+                color="text.secondary"
+                gutterBottom
+              >
+                30 minutes pomodoro 👀💐
+              </Typography>
+            </CardContent>
+          </Card>
+        </Grid>
+      </Grid>
       <Box
         sx={{
           textAlign: "center",
