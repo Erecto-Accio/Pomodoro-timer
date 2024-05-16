@@ -31,7 +31,7 @@ const App = () => {
           textAlign: "center",
           maxWidth: "500px",
           margin: "0 auto",
-          mt: 30,
+          mt: 25,
         }}
         className="main"
       >
