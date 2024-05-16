@@ -2,8 +2,11 @@ import React, { useEffect, useState } from "react";
 import { Typography, Button } from "@mui/material";
 
 const Timer = () => {
-  const [minutes, setMinutes] = useState(25);
-  const [seconds, setSeconds] = useState(0);
+  const initialMinutes = 25;
+  const initialSeconds = 0;
+
+  const [minutes, setMinutes] = useState(initialMinutes);
+  const [seconds, setSeconds] = useState(initialSeconds);
   const [displayMessage, setDisplayMessage] = useState(false);
   const [isPaused, setIsPaused] = useState(false);
 
@@ -44,6 +47,13 @@ const Timer = () => {
     setIsPaused(false);
   };
 
+  const handleReset = () => {
+    setIsPaused(true);
+    setMinutes(initialMinutes);
+    setSeconds(initialSeconds);
+    setDisplayMessage(false);
+  };
+
   const timerMinutes = minutes < 10 ? `0${minutes}` : minutes;
   const timerSeconds = seconds < 10 ? `0${seconds}` : seconds;
 
@@ -57,9 +67,10 @@ const Timer = () => {
       <Typography variant="h1">
         {timerMinutes} : {timerSeconds}
       </Typography>
-      <Button sx={{ mt: 5 }} onClick={isPaused ? handleStart : handlePause}>
+      <Button onClick={isPaused ? handleStart : handlePause}>
         {isPaused ? "Start" : "Pause"}
       </Button>
+      <Button onClick={handleReset}>Reset</Button>
     </div>
   );
 };
