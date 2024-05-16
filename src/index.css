@@ -2,4 +2,8 @@
 
 * {
   font-family: "Space Grotesk" !important;
+  text-decoration: none;
+}
+a {
+  color: black;
 }

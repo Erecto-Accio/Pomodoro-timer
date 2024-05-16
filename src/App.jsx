@@ -17,7 +17,11 @@ const App = () => {
       >
         {" "}
         <Typography variant="subtitle">Made by Tousif Tasrik 💗</Typography>
-        <Typography variant="subtitle">Follow me</Typography>
+        <Typography variant="subtitle">
+          <a target="_blank" href="https://www.facebook.com/tousif.tasrik">
+            Follow me 👋
+          </a>
+        </Typography>
       </Box>
       <Card sx={{ margin: "0 auto", mt: 2, width: "250px" }}>
         <CardContent>
