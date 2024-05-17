@@ -25,7 +25,7 @@ const App = () => {
         <Grid
           item
           sx={{ margin: "0 auto", mt: { lg: 2 }, mt: { xs: 5 } }}
-          xs={6.2}
+          xs={8}
           sm={6}
           md={2}
           lg={2}
