@@ -1,8 +1,6 @@
 import React from "react";
 import Timer from "./Timer";
 import { Box, Card, CardContent, Grid, Typography } from "@mui/material";
-import { Facebook } from "@mui/icons-material";
-
 const App = () => {
   return (
     <>
@@ -26,11 +24,11 @@ const App = () => {
       <Grid container spacing={2}>
         <Grid
           item
-          sx={{ margin: "0 auto", mt: { lg: 4 }, mt: { xs: 5 } }}
-          xs={7}
+          sx={{ margin: "0 auto", mt: { lg: 2 }, mt: { xs: 5 } }}
+          xs={6.2}
           sm={6}
-          md={4}
-          lg={3}
+          md={2}
+          lg={2}
         >
           <Card>
             <CardContent>
@@ -50,7 +48,7 @@ const App = () => {
           textAlign: "center",
           maxWidth: "500px",
           margin: "0 auto",
-          mt: 25,
+          mt: 18,
         }}
         className="main"
       >
