@@ -21,7 +21,19 @@ const App = () => {
           </a>
         </Typography>
       </Box>
-      <Grid container spacing={2}>
+      <Box
+        sx={{
+          textAlign: "center",
+          maxWidth: "500px",
+          margin: "0 auto",
+          mt: { lg: 25 },
+          mt: { xs: 30 },
+        }}
+        className="main"
+      >
+        <Timer />
+      </Box>
+      {/* <Grid container spacing={2}>
         <Grid
           item
           sx={{ margin: "0 auto", mt: { lg: 2 }, mt: { xs: 5 } }}
@@ -42,18 +54,7 @@ const App = () => {
             </CardContent>
           </Card>
         </Grid>
-      </Grid>
-      <Box
-        sx={{
-          textAlign: "center",
-          maxWidth: "500px",
-          margin: "0 auto",
-          mt: 18,
-        }}
-        className="main"
-      >
-        <Timer />
-      </Box>
+      </Grid> */}
     </>
   );
 };
